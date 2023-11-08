@@ -1,0 +1,68 @@
+.container{
+    width: 300px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    margin-top: 5%;
+    background-color: #A459D1;
+    font-size: larger;
+    font-family: 'Indie Flower', cursive;
+    box-shadow: 5px 4px 12px 2px; 
+
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Indie Flower', cursive;scale: 1.3;}
+    body {
+        background-image: url(../pics/backgrowns.gif);
+        background-size: cover;
+        margin: 0;}
+label{
+    position: relative;
+top: 25px;
+font-size: x-large;
+}
+input{
+    position: relative;
+    top: 25px;
+}
+button{
+    position: relative;
+    top: 45px; 
+    background-color: #FFB84C;
+    border-radius: 10px;
+    scale: 1.2;
+    transition: 0.7s;
+
+}
+button:hover{
+    scale: 1.3;
+    background-color: #eedbbf;
+    box-shadow:0,0,3px,5px #A459D1;
+    transition: 0.7s;
+    box-shadow: 5px 4px 12px 2px; 
+
+
+}
+.btn{
+text-align: center;
+margin-bottom:  600px;
+
+
+}
+::placeholder{
+    text-align: center;
+}
+.log{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    text-align: center;
+    margin-top: 5%;
+    background-color: #A459D1;
+    font-size: larger;
+    font-family: 'Indie Flower', cursive;
+    box-shadow: 5px 4px 12px 2px; 
+
+}
