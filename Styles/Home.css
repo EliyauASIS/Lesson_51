@@ -1,0 +1,73 @@
+body{
+    background-color: #2CD3E1;
+}
+#navigationBar{
+    background-color: #A459D1;
+    height: 120px;
+    margin-top: -0.5%;
+    padding-right: 3%;
+    width: auto;
+position: relative;
+}
+#CompanyName{
+    color: #FFB84C;
+    margin-left: 5%;
+    font-size: 50px;
+    
+}
+#log-out{
+   float: right;
+   margin-top: -1.7%;
+   font-size: 30px;
+   text-decoration: none;
+   color: #FFB84C;
+}
+#Cart{
+     float: right;
+   margin-top: -1.7%;
+   font-size: 30px;
+   text-decoration: none;
+   margin-right: 8%;
+   color: #FFB84C;
+}
+#Title{
+    margin-top: 8%;
+    text-align: center;
+    color: #F266AB;
+    font-size: 100px;
+}
+#ItemsDiv{
+    margin-top: 8%;
+    height: 1000px;
+    background-color: #FFB84C;
+    display: flex;
+}
+.item{
+    text-align: center;
+    margin-left: 4%;
+    margin-top: 1%;
+    width: 500px;
+    height: 850px;
+    background-color:#f1a73a;
+    border-radius: 20px;
+    border: 2px solid #2CD3E1;
+    color: black;
+}
+.price{
+    font-size: 50px;
+    font-weight: bold;
+    color: green;
+}
+.addCartBtn{
+    width: 200px;
+    height: 30px;
+    background-color: #2CD3E1;
+    color: black;
+    font-size: 20px;
+    border-radius: 20px;
+}
+.itemContent{
+    font-size: large;
+}
+
+
