@@ -1,20 +1,21 @@
-const toys = [
-    { name: 'toy 1', price: 15 },
-    { name: 'toy 2', price: 5 },
-    { name: 'toy 3', price: 8 },
-    { name: 'toy 4', price: 2 }
-];
+let totalCart = 0;
+
+let cartData = JSON.parse(localStorage.getItem("CartItems"))
+console.log(cartData);
+addToCart()
+function addToCart() {
+    for (let x in cartData) {
+        let name = cartData[x].name;
+        let price = cartData[x].price;
+        console.log(name);
+        console.log(price);
+        const cart = document.getElementById("cartContainer");
+        const item = document.createElement("p");
+        item.innerHTML = `<a href="#">${cartData[x].name}</a> <span class="price">${cartData[x].price}$</span>`;
+        cart.insertAdjacentElement("beforeend", item);
+        totalCart+=price;
+    }
+  document.getElementById("total").innerHTML=totalCart + "$"
+}
 
 
-localStorage.setItem('cart', JSON.stringify(toys));
-
-
-
-
-let cartData = localStorage.getItem()
-
-
-const cart = document.getElementById("cartContainer");
-const item = document.createElement("p");
-item.innerHTML = `<a href="#">${product.name}</a> <span class="price">$${product.price}</span>`;
-cart.insertAdjacentElement("beforeend",item);
