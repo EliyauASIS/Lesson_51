@@ -1,4 +1,7 @@
 
+
+
+let spinner = document.getElementById("spinner");
     class User {
     constructor (firstname, lastname, age, username, city, email, password){
        this.firstname = firstname,
@@ -20,14 +23,18 @@ const register_handler = () => {
     let email = document.getElementById("email");
     let city = document.getElementById("city");
     let password = document.getElementById("password");
-    if (firstname.value == "" || lastname.value == "" ||age.value == "" || username == "" || city == "" ||email.value == "" ||password == "") {
+    if (firstname.value == "" || lastname.value == "" ||age.value == "" || username.value == "" || city.value == "" ||email.value == "" ||password.value == "") {
         alert("Missing data!")
     } else {
         
+        spinner.style.display = 'block';
             let newUser = new User(firstname.value, lastname.value, age.value, username.value, city.value, email.value, password.value)
             localStorage.setItem("newUser", JSON.stringify(newUser));
-            setTimeout(()=>{
+
+                        setTimeout(()=>{
                 window.location.href = "./login.html"
+                spinner.style.display = "none";
+
             },2000  )
         };
 

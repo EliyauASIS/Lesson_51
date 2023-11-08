@@ -1,6 +1,6 @@
-
 let getData = localStorage.getItem("newUser");
 console.log(getData);
+$(".log").slideDown(1500);
 
 let user1 = JSON.parse(getData);
 
