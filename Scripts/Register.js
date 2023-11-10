@@ -1,6 +1,14 @@
 
 
+$(document).ready(function () {
+  $("#headline").animate({left:"200px"},1000);
+  $("#headline").animate({left:"-100px"},1000);
+  $("#headline").animate({top:"200px"},1000);
+  $("#headline").animate({top:"-100px"},1000);
+  $("#headline").animate({scale:"1.5"},1000);
+  $("#headline").fadeIn(1000);
 
+});
 let spinner = document.getElementById("spinner");
     class User {
     constructor (firstname, lastname, age, username, city, email, password){

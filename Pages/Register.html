@@ -1,37 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="../styles/Register.css">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../Media/gift.ico">
+    <title>Register Page</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
-    <h1>Register Page</h1>
-    <div class="container">
-        <label>First Name</label><br>
-        <input type="text" id="firstname" placeholder="Fill up your first name"><br>
-        <label>Last Name</label><br>
-        <input type="text" id="lastname" placeholder="Fill up your last name"><br>
-        <label>Age</label><br>
-        <input type="text" id="age" placeholder="What is your age?"><br>
-        <label>User Name</label><br>
-        <input type="text" id="username" placeholder="Fill up your user name"><br>
-        <label>City</label><br>
-        <input type="text" id="city" placeholder="Fill up your city"><br>
-        <label>E-Mail</label><br>
-        <input type="email" id="email" placeholder="Email please"><br>
-        <label>Password</label><br>
-        <input type="password" id="password" placeholder="password"><br>
-        <div>
-            <button id="regBtn">Register</button>
+    <div class="twobox">
+        <div class="headline" id="headline">
+            <h1>Welcome to
+                <br></br>  <div id="toy">ToyLand</div>
+                <br> The best Toys marketplace<br> In the World!
+            </h1>
+
+        </div>
+        <div class="container">
+            <h2>Registration</h2>
+            <label>First Name</label><br>
+            <input type="text" id="firstname" placeholder="Fill up your first name"><br>
+            <label>Last Name</label><br>
+            <input type="text" id="lastname" placeholder="Fill up your last name"><br>
+            <label>Age</label><br>
+            <input type="text" id="age" placeholder="What is your age?"><br>
+            <label>User Name</label><br>
+            <input type="text" id="username" placeholder="Fill up your user name"><br>
+            <label>City</label><br>
+            <input type="text" id="city" placeholder="Fill up your city"><br>
+            <label>E-Mail</label><br>
+            <input type="email" id="email" placeholder="Email please"><br>
+            <label>Password</label><br>
+            <input type="password" id="password" placeholder="password"><br>
+            <div>
+                <button id="regBtn">Register</button>
+            </div>
         </div>
     </div>
     <div class="lds-hourglass" id="spinner"></div>
 
     <script src="../scripts/Register.js"></script>
 </body>
+
 </html>
