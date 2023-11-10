@@ -1,73 +1,177 @@
-body{
-    background-color: #2CD3E1;
+body {
+    background-color: white;
 }
-#navigationBar{
-    background-color: #A459D1;
+
+.Ads {
+    position: sticky;
+    top: 30%;
+    z-index: 20;
+}
+
+#LeftAd {
+    float: left;
+    position: sticky;
+    height: 800px;
+
+}
+
+#RightAd {
+    float: right;
+    position: sticky;
+    height: 800px;
+}
+
+#container {
+    display: flex;
+    position: relative;
+}
+
+#navigationBar {
+    background-color: black;
     height: 120px;
-    margin-top: -0.5%;
     padding-right: 3%;
-    width: auto;
-position: relative;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
-#CompanyName{
+
+#CompanyName {
     color: #FFB84C;
     margin-left: 5%;
     font-size: 50px;
-    
+
 }
-#log-out{
-   float: right;
-   margin-top: -1.7%;
-   font-size: 30px;
-   text-decoration: none;
-   color: #FFB84C;
+
+#log-out {
+    float: right;
+    font-size: 35px;
+    text-decoration: none;
+    color: #FFB84C;
 }
-#Cart{
-     float: right;
-   margin-top: -1.7%;
-   font-size: 30px;
-   text-decoration: none;
-   margin-right: 8%;
-   color: #FFB84C;
+
+#Cart {
+    float: right;
+    font-size: 35px;
+    text-decoration: none;
+    margin-right: 8%;
+    color: #FFB84C;
 }
-#Title{
-    margin-top: 8%;
-    text-align: center;
-    color: #F266AB;
+
+#homeImage {
+    background-image: url("../Media/kid-playing-home.jpg");
+    background-repeat: no-repeat;
+    background-size:contain;
+    width: 100%;
+    position: fixed;
+    padding-right: 10%;
+    height: 1200px;
+    position: absolute;
+    z-index: -50;
+}
+
+#Title {
+    color: black;
     font-size: 100px;
+   margin-left: 5%;
+   margin-top: 10%;
 }
-#ItemsDiv{
-    margin-top: 8%;
+
+#ItemsDiv {
+    background-color: bisque;
+    margin-top: 70%;
+    margin-left: 4%;
     height: 1000px;
-    background-color: #FFB84C;
     display: flex;
 }
-.item{
+
+.item {
     text-align: center;
-    margin-left: 4%;
-    margin-top: 1%;
-    width: 500px;
-    height: 850px;
-    background-color:#f1a73a;
-    border-radius: 20px;
-    border: 2px solid #2CD3E1;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 3%;
+    width: 400px;
+    height: 550px;
+    background-color: #f1a73a;
+    border: 1px solid black;
     color: black;
 }
-.price{
+.itemName{
+    margin-top: -0%;
+    background-color: antiquewhite;
+    font-size: 40px;
+}
+
+#DinosaurAirplane {
+    background-image: url("../Media/Toys_Kids_Item_1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.item:hover #DinosaurAirplaneInformation{
+    display: block;
+}
+
+#Basketball_Hoop {
+    background-image: url("../Media/Toys_Kids_Item_2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.item:hover #Basketball_HoopInformation{
+    display: block;
+}
+
+#Batmobile {
+    background-image: url("../Media/Toys_Kids_Item_3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.item:hover #BatmobileInformation{
+    display: block;
+}
+
+#Magnetic_Toys {
+    background-image: url("../Media/Toys_Kids_Item_4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.item:hover #Magnetic_ToysInformation{
+    display: block;
+}
+
+.itemsInformation{
+    display: none;
+    background-color:bisque;
+    height: 450px;
+}
+.price {
     font-size: 50px;
     font-weight: bold;
     color: green;
 }
-.addCartBtn{
+
+.addCartBtn {
     width: 200px;
     height: 30px;
     background-color: #2CD3E1;
     color: black;
     font-size: 20px;
-    border-radius: 20px;
-}
-.itemContent{
-    font-size: large;
+    border-radius: 10px;
 }
 
+.itemContent {
+    font-size: 20px;
+    padding: 5%;
+}
 
+.amountBtn{
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+}
+input{
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    font-size: 50px;
+}
