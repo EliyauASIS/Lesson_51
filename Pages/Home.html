@@ -2,54 +2,88 @@
 <html lang="en">
 
 <head>
+<<<<<<< HEAD
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Styles/Home.css">
     <link rel="icon" type="image/x-icon" href="../Media/gift.ico">
     <title>ToyLand</title>
+=======
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../Styles/Home.css">
+  <title>Document</title>
+>>>>>>> 455a44ca58ee1c310c3e9785a67e9b76199883c7
 </head>
 
 <body>
-    <div id="container">
-        <div id="navigationBar">
-            <h1 id="CompanyName">E.A.S.</h1>
-            <a href="../Pages/Cart.html" onclick="Cart()" id="Cart">Cart</a>
-            <a href="../Pages/Login.html" id="log-out">Log-Out</a>
+  <div class="Ads">
+    <img id="LeftAd" src="../Media/909173_cd5d2d3f-5ffd-4ace-81df-2fac4f15a2f2.jpg" alt="ad">
+    <img id="RightAd" src="../Media/909173_cd5d2d3f-5ffd-4ace-81df-2fac4f15a2f2.jpg" alt="ad">
+  </div>
+  <div id="container">
+    <div id="navigationBar">
+      <h1 id="CompanyName">E.A.S.</h1>
+      <a href="../Pages/Cart.html" onclick="Cart()" id="Cart">Cart</a>
+      <a href="../Pages/Login.html" id="log-out">Log-Out</a>
+    </div>
+    <div id="homeImage">
+      <h1 id="Title">Toys For Every One</h1>
+    </div>
+    <div id="div">
+
+    </div>
+    <div id="ItemsDiv">
+      <div class="item" id="DinosaurAirplane">
+        <h1 class="itemName">Dinosaur Airplane</h1>
+        <div id="DinosaurAirplaneInformation" class="itemsInformation">
+          <p class="itemContent">
+            Dinosaur Airplane Launcher Toys for Boys: 3 Pack Dino Foam Airplanes Outdoor Toy Birthday Gifts for Kids Age
+            4 5 6 7 8 9 10 Years Old</p> 
+            <p class="price">10$</p>
+          <p><button class="amountBtn">-</button><input type="text" id="" value="1" readonly><button class="amountBtn">+</button></p>
+          <p id="item1"><button class="addCartBtn" onclick="Cart_Engine(`Dinosaur Airplane`,10)">Add to Cart</button>
+          </p>
         </div>
-        <h1 id="Title">Toys For Every One</h1>
-        <div id="ItemsDiv">
-            <div class="item">
-                <img src="../Media/Toys_Kids_Item_1.jpg" alt="Dinosaur_Airplane" style="width:500px; height: 500px; border-radius: 20px;">
-                <h1 class="itemName">Dinosaur Airplane</h1>
-                <p class="price">10$</p>
-                <p class="itemContent">
-                    Dinosaur Airplane Launcher Toys for Boys: 3 Pack Dino Foam Airplanes Outdoor Toy Birthday Gifts for Kids Age 4 5 6 7 8 9 10 Years Old</p>
-                <p id="item1"><button class="addCartBtn" onclick="Cart_Engine(`Dinosaur Airplane`,10)">Add to Cart</button></p>
-              </div>
-              <div class="item">
-                <img src="../Media/Toys_Kids_Item_2.jpg" alt="Basketball_Hoop" style="width:500px; height: 500px; border-radius: 20px;">
-                <h1 class="itemName">Basketball Hoop</h1>
-                <p class="price">25$</p>
-                <p class="itemContent">
-                    Kids Basketball Hoop with Electronic Scoreboard, Adjustable Height 3.4ft-5.9ft Basketball Hoop,Mini Basketball Hoop with 2 Balls for Indoor Outdoor</p>
-                <p id="item1"><button class="addCartBtn" onclick="Cart_Engine(`Basketball Hoop`,25)">Add to Cart</button></p>
-              </div>
-              <div class="item">
-                <img src="../Media/Toys_Kids_Item_3.jpg" alt="Batmobile" style="width:500px; height: 500px; border-radius: 20px;">
-                <h1 class="itemName">Batmobile</h1>
-                <p class="price">5$</p>
-                <p class="itemContent">
-                    DC Comics, Crusader Batmobile Playset with Exclusive 4-inch Batman Figure, 3 Super-Villain Paper Figures, Kids Toys for Boys and Girls Ages 4+</p>
-                <p id="item1"><button class="addCartBtn" onclick="Cart_Engine(`Batmobile`,5)">Add to Cart</button></p>
-              </div>
-              <div class="item">
-                <img src="../Media/Toys_Kids_Item_4.jpg" alt="Magnetic_Toys" style="width:500px; height: 500px; border-radius: 20px;">
-                <h1 class="itemName">Magnetic Toys</h1>
-                <p class="price">40$</p>
-                <p class="itemContent">NQGOPPH Magnetic Toys, 112 PCS Magnets for Kids, Magnet Toys for Kids Ages 4-8, Magnetic Blocks for Boys &Girls, Magnetic Tiles Encourage</p>
-                <p id="item1"><button class="addCartBtn" onclick="Cart_Engine(`Magnetic Toys`,40)">Add to Cart</button></p>
-              </div>
-              <!-- <div class="item">
+      </div>
+      <div class="item" id="Basketball_Hoop">
+        <h1 class="itemName">Basketball Hoop</h1>
+        <div id="Basketball_HoopInformation" class="itemsInformation">
+          <p class="itemContent">
+            Kids Basketball Hoop with Electronic Scoreboard, Adjustable Height 3.4ft-5.9ft Basketball Hoop,Mini
+            Basketball
+            Hoop with 2 Balls for Indoor Outdoor</p>
+             <p class="price">25$</p>
+          <p><button class="amountBtn">-</button><input type="text" value="1" readonly><button class="amountBtn">+</button></p>
+          <p id="item1"><button class="addCartBtn" onclick="Cart_Engine(`Basketball Hoop`,25)">Add to Cart</button></p>
+          </p>
+        </div>
+      </div>
+      <div class="item" id="Batmobile">
+        <h1 class="itemName">Batmobile</h1>
+        <div id="BatmobileInformation" class="itemsInformation">
+          <p class="itemContent">
+            DC Comics, Crusader Batmobile Playset with Exclusive 4-inch Batman Figure, 3 Super-Villain Paper Figures,
+            Kids
+            Toys for Boys and Girls Ages 4+</p>
+            <p class="price">5$</p>
+          <p><button class="amountBtn">-</button><input type="text" value="1" readonly><button class="amountBtn">+</button></p>
+          <p id="item1"><button class="addCartBtn" onclick="Cart_Engine(`Batmobile`,5)">Add to Cart</button></p>
+        </div>
+      </div>
+      <div class="item" id="Magnetic_Toys">
+        <h1 class="itemName">Magnetic Toys</h1>
+        <div id="Magnetic_ToysInformation" class="itemsInformation">
+           <p class="itemContent">
+            NQGOPPH Magnetic Toys, 112 PCS Magnets for Kids, Magnet Toys for Kids Ages 4-8,
+            Magnetic
+            Blocks for Boys &Girls, Magnetic Tiles Encourage</p>
+          <p class="price">40$</p>
+          <p><button class="amountBtn">-</button><input type="text" value="1" readonly><button class="amountBtn">+</button></p>
+          <p id="item1"><button class="addCartBtn" onclick="Cart_Engine(`Magnetic Toys`,40)">Add to Cart</button></p>
+        </div>
+      </div>
+      <!-- <div class="item">
                 <img src="" alt="" style="width:20%; height: 20%">
                 <h1 class="itemName"></h1>
                 <p class="price"></p>
@@ -63,15 +97,15 @@
                 <p class="itemContent"></p>
                 <p><button class="addCartBtn">Add to Cart</button></p>
               </div> -->
-              
-        </div>
+
     </div>
+  </div>
 
 
 
 
 
-    <script src="../Scripts/Home.js"></script>
+  <script src="../Scripts/Home.js"></script>
 </body>
 
 </html>
