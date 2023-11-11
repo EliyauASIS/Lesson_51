@@ -101,3 +101,15 @@ body {
       margin-bottom: 20px;
     }
   }
+
+  #trash{
+   background-color: #2CD3E1; 
+   border: #2CD3E1;
+   width: 20px;
+   height: 20px;
+  }
+
+  #trash :hover{
+    color: red;
+    background-color: red;
+  }

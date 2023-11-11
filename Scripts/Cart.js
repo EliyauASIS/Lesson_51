@@ -9,13 +9,23 @@ function addToCart() {
         let price = cartData[x].price;
         console.log(name);
         console.log(price);
+        const iconHTML = '<i class="fa-solid fa-trash fa-2xl"></i>';
         const cart = document.getElementById("cartContainer");
         const item = document.createElement("p");
-        item.innerHTML = `<a href="#">${cartData[x].name}</a> <span class="price">${cartData[x].price}$</span>`;
+        item.innerHTML = `<button id="trash" onclick="deleteItem(${x})">${iconHTML}</button> <a href="#">${cartData[x].name}</a> <span class="price">${cartData[x].price}$</span> `;
         cart.insertAdjacentElement("beforeend", item);
-        totalCart+=price;
+        totalCart += price;
     }
-  document.getElementById("total").innerHTML=totalCart + "$"
+    document.getElementById("total").innerHTML = totalCart + "$"
 }
 
+function deleteItem(index) {
+    const userConfirmed = window.confirm("Are you sure you want to delete this item?");
+    if (userConfirmed) {
 
+
+        cartData.splice(index, 1);
+        localStorage.setItem("CartItems", JSON.stringify(cartData));
+        location.reload();
+    }
+}
