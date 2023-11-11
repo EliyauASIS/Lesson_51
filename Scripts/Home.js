@@ -55,7 +55,14 @@ const plus_handler = (index) => {
 
 let itemsArrCart = []
 
+// let cart = document.getElementById("cart")
+//    cart.style.color = "white"
 const Cart_Engine = (index) => {
+   
+   let cartNumber = document.getElementById("cartNum")
+   cartNumber.innerHTML = Number(cartNumber.innerHTML) +1
+   cart.style.color = "blue"
+
    let itemObj = {
       name: itemsArr[index].itemName,
       amount: itemsArr[index].itemAmount,

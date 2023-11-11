@@ -1,3 +1,4 @@
+
 body {
     background-color: white;
 }
@@ -27,7 +28,7 @@ body {
 }
 
 #navigationBar {
-    background-color: black;
+    background-color: bisque;
     height: 120px;
     padding-right: 3%;
     width: 100%;
@@ -41,21 +42,24 @@ body {
     margin-left: 5%;
     font-size: 50px;
 
+
 }
 
 #log-out {
     float: right;
+    margin-top: -3%;
+    margin-right: 7%;
     font-size: 35px;
     text-decoration: none;
     color: #FFB84C;
 }
 
-#Cart {
+#cart {
     float: right;
     font-size: 35px;
-    text-decoration: none;
-    margin-right: 8%;
     color: #FFB84C;
+    margin-top: -3%;
+    margin-right: 3%;
 }
 
 #homeImage {
