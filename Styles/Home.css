@@ -86,6 +86,8 @@ body {
 }
 
 .item {
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
     margin-left: 2%;
     margin-right: 2%;
@@ -111,12 +113,12 @@ body {
     display: block;
 }
 
-#Basketball_Hoop {
+#BasketballHoop {
     background-image: url("../Media/Toys_Kids_Item_2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
-.item:hover #Basketball_HoopInformation{
+.item:hover #BasketballHoopInformation{
     display: block;
 }
 
@@ -129,13 +131,13 @@ body {
     display: block;
 }
 
-#Magnetic_Toys {
+#MagneticToys {
     background-image: url("../Media/Toys_Kids_Item_4.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.item:hover #Magnetic_ToysInformation{
+.item:hover #MagneticToysInformation{
     display: block;
 }
 
