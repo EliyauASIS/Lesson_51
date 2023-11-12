@@ -5,7 +5,7 @@ body {
     --c2: bisque;
     --c3: white;
     --bg: var(--c3);
-    --d: 12000ms;
+    --d: 50000ms;
     --e: cubic-bezier(0.76, 0, 0.24, 1);
     
     background-color: var(--bg);
