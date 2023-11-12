@@ -1,3 +1,4 @@
+
 body {
     background-color: white;
 }
@@ -27,7 +28,7 @@ body {
 }
 
 #navigationBar {
-    background-color: black;
+    background-color: bisque;
     height: 120px;
     padding-right: 3%;
     width: 100%;
@@ -41,21 +42,24 @@ body {
     margin-left: 5%;
     font-size: 50px;
 
+
 }
 
 #log-out {
     float: right;
+    margin-top: -3%;
+    margin-right: 7%;
     font-size: 35px;
     text-decoration: none;
     color: #FFB84C;
 }
 
-#Cart {
+#cart {
     float: right;
     font-size: 35px;
-    text-decoration: none;
-    margin-right: 8%;
     color: #FFB84C;
+    margin-top: -3%;
+    margin-right: 3%;
 }
 
 #homeImage {
@@ -86,6 +90,8 @@ body {
 }
 
 .item {
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
     margin-left: 2%;
     margin-right: 2%;
@@ -111,12 +117,12 @@ body {
     display: block;
 }
 
-#Basketball_Hoop {
+#BasketballHoop {
     background-image: url("../Media/Toys_Kids_Item_2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
-.item:hover #Basketball_HoopInformation{
+.item:hover #BasketballHoopInformation{
     display: block;
 }
 
@@ -129,13 +135,13 @@ body {
     display: block;
 }
 
-#Magnetic_Toys {
+#MagneticToys {
     background-image: url("../Media/Toys_Kids_Item_4.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.item:hover #Magnetic_ToysInformation{
+.item:hover #MagneticToysInformation{
     display: block;
 }
 
