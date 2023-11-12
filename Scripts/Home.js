@@ -30,7 +30,7 @@ const showItems = () => {
       ${itemsArr[x].itemContent}</p> 
        <p class="price">${itemsArr[x].itemPrice}$</p>
       <p><button onclick="minus_handler(${x})" class="amountBtn">-</button><input type="text" id="" value="${itemsArr[x].itemAmount}" readonly><button onclick="plus_handler(${x})" class="amountBtn">+</button></p>
-      <p id="item1"><button class="addCartBtn" onclick="Cart_Engine(${x})">Add to Cart</button>
+      <p id="item${x}"><button class="addCartBtn" id="cartBtn${x}" onclick="Cart_Engine(${x})">Add to Cart</button>
       </p>
       </div>`
    }
@@ -55,10 +55,13 @@ const plus_handler = (index) => {
 
 let itemsArrCart = []
 
-// let cart = document.getElementById("cart")
-//    cart.style.color = "white"
+let cart = document.getElementById("cart")
+
 const Cart_Engine = (index) => {
-   
+   let cartBtn = document.getElementById("item"+index)
+   cartBtn.innerHTML = `<span>Added to Cart!</span`
+   cartBtn.style.fontSize = "150%"
+   cartBtn.style.color = "green"
    let cartNumber = document.getElementById("cartNum")
    cartNumber.innerHTML = Number(cartNumber.innerHTML) +1
    cart.style.color = "blue"
