@@ -113,7 +113,7 @@ body {
 }
 
 #navigationBar {
-    background-color: bisque;
+    background-color: crimson;
     height: 120px;
     padding-right: 3%;
     width: 100%;
@@ -130,7 +130,6 @@ body {
 
 
 #homeImage {
-
     background-repeat: no-repeat;
     background-size:contain;
     width: 100%;
@@ -146,20 +145,29 @@ body {
      text-align: center;
      font-size: 600%;
      font-weight: bold;
+     stroke: black;
+     color: rgb(120, 0, 24);
+}
+.Title2 {
+    margin-top: 4%;
+    text-align: center;
+    font-size: 600%;
+    font-weight: bold;
+    color: rgb(120, 0, 24);
 }
 #log-out {
    margin-left: 85%;
     margin-top: -3%;
     font-size: 35px;
     text-decoration: none;
-    color: crimson;
+    color: bisque;
 }
 
 #cart {
     margin-left: 5%;
     font-size: 35px;
     padding-top: 5%;
-    color: crimson;
+    color: bisque;
     width: fit-content;
     margin-top: 10%;
 }
