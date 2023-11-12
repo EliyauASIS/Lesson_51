@@ -1,4 +1,88 @@
-
+body {
+    --s: 25vmin;
+    --p: calc(var(--s) / 2);
+    --c1: rgb(255, 91, 121);
+    --c2: bisque;
+    --c3: white;
+    --bg: var(--c3);
+    --d: 50000ms;
+    --e: cubic-bezier(0.76, 0, 0.24, 1);
+    
+    background-color: var(--bg);
+    background-image:
+      linear-gradient(45deg, var(--c1) 25%, transparent 25%),
+      linear-gradient(-45deg, var(--c1) 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, var(--c2) 75%),
+      linear-gradient(-45deg, transparent 75%, var(--c2) 75%);
+    background-size: var(--s) var(--s);
+    background-position: 
+      calc(var(--p) *  1) calc(var(--p) *  0), 
+      calc(var(--p) * -1) calc(var(--p) *  1), 
+      calc(var(--p) *  1) calc(var(--p) * -1), 
+      calc(var(--p) * -1) calc(var(--p) *  0);
+    animation: 
+      color var(--d) var(--e) infinite,
+      position var(--d) var(--e) infinite;
+  }
+  
+  @keyframes color {
+    0%, 25% {
+      --bg: var(--c3);
+    }
+    26%, 50% {
+      --bg: var(--c1);
+    }
+    51%, 75% {
+      --bg: var(--c3);
+    }
+    76%, 100% {
+      --bg: var(--c2);
+    }
+  }
+  
+  @keyframes position {
+    0% {
+      background-position: 
+        calc(var(--p) *  1) calc(var(--p) *  0), 
+        calc(var(--p) * -1) calc(var(--p) *  1), 
+        calc(var(--p) *  1) calc(var(--p) * -1), 
+        calc(var(--p) * -1) calc(var(--p) *  0);
+    }
+    25% {
+      background-position: 
+        calc(var(--p) *  1) calc(var(--p) *  4), 
+        calc(var(--p) * -1) calc(var(--p) *  5), 
+        calc(var(--p) *  1) calc(var(--p) *  3), 
+        calc(var(--p) * -1) calc(var(--p) *  4);
+    }
+    50% {
+      background-position: 
+        calc(var(--p) *  3) calc(var(--p) * 8), 
+        calc(var(--p) * -3) calc(var(--p) * 9), 
+        calc(var(--p) *  2) calc(var(--p) * 7), 
+        calc(var(--p) * -2) calc(var(--p) * 8);
+    }
+    75% {
+      background-position: 
+        calc(var(--p) *  3) calc(var(--p) * 12), 
+        calc(var(--p) * -3) calc(var(--p) * 13), 
+        calc(var(--p) *  2) calc(var(--p) * 11), 
+        calc(var(--p) * -2) calc(var(--p) * 12);
+    }
+    100% {    
+      background-position: 
+        calc(var(--p) *  5) calc(var(--p) * 16), 
+        calc(var(--p) * -5) calc(var(--p) * 17), 
+        calc(var(--p) *  5) calc(var(--p) * 15), 
+        calc(var(--p) * -5) calc(var(--p) * 16);
+    }
+  }
+  
+  @media (prefers-reduced-motion) {
+    body {
+      animation: none;
+    }
+  }
 body {
     background-color: white;
 }
@@ -12,19 +96,20 @@ body {
 #LeftAd {
     float: left;
     position: sticky;
-    height: 800px;
+    height: 60vh;
 
 }
 
 #RightAd {
     float: right;
     position: sticky;
-    height: 800px;
+    height: 60vh;
 }
 
 #container {
     display: flex;
     position: relative;
+    font-family: 'Merriweather', serif;
 }
 
 #navigationBar {
@@ -37,33 +122,15 @@ body {
     left: 0;
 }
 
-#CompanyName {
+/* #CompanyName {
     color: #FFB84C;
     margin-left: 5%;
     font-size: 50px;
+} */
 
-
-}
-
-#log-out {
-    float: right;
-    margin-top: -3%;
-    margin-right: 7%;
-    font-size: 35px;
-    text-decoration: none;
-    color: #FFB84C;
-}
-
-#cart {
-    float: right;
-    font-size: 35px;
-    color: #FFB84C;
-    margin-top: -3%;
-    margin-right: 3%;
-}
 
 #homeImage {
-    background-image: url("../Media/kid-playing-home.jpg");
+
     background-repeat: no-repeat;
     background-size:contain;
     width: 100%;
@@ -74,18 +141,34 @@ body {
     z-index: -50;
 }
 
-#Title {
-    color: black;
-    font-size: 100px;
-   margin-left: 5%;
-   margin-top: 10%;
+.Title {
+     margin-top: 15%;
+     text-align: center;
+     font-size: 600%;
+     font-weight: bold;
+}
+#log-out {
+   margin-left: 85%;
+    margin-top: -3%;
+    font-size: 35px;
+    text-decoration: none;
+    color: crimson;
+}
+
+#cart {
+    margin-left: 5%;
+    font-size: 35px;
+    padding-top: 5%;
+    color: crimson;
+    width: fit-content;
+    margin-top: 10%;
 }
 
 #ItemsDiv {
-    background-color: bisque;
-    margin-top: 70%;
-    margin-left: 4%;
-    height: 1000px;
+    background-color: crimson;
+    margin-top: 60%;
+    margin-left: 5.5%;
+    height: 50vh;
     display: flex;
 }
 
@@ -158,16 +241,20 @@ body {
 
 .addCartBtn {
     width: 200px;
-    height: 30px;
+    height: 50px;
     background-color: #2CD3E1;
     color: black;
     font-size: 20px;
     border-radius: 10px;
+    transition: 0.5s;
+}
+.addCartBtn:hover {
+    width: 150px;
+    height: 40px;
 }
 
 .itemContent {
     font-size: 20px;
-    padding: 5%;
 }
 
 .amountBtn{
@@ -176,8 +263,8 @@ body {
     font-size: 40px;
 }
 input{
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     text-align: center;
     font-size: 50px;
 }
